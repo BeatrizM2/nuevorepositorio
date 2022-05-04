@@ -63,13 +63,13 @@ a {
   height: 60vh;
 }
 /*estilo de index*/
-/*aqui nose si la imagen principal es correcta en tamaño o me esta perjudicando*/
+
 .imagen-principal img {
   height: auto;
   width: 100%;
   object-fit: cover;
 }
-/*aqui tengo un problema con los titulos que no se porque no toma todos el mismo estilo*/
+
 .title_index,
 .title_gallery,
 .title_faq,
@@ -80,7 +80,7 @@ a {
   font-style: oblique;
   text-align: center;
   color: gray;
-  padding-top: 10rem;
+  padding-top: 5em;
 }
 
 .titulo-secundario-index {
@@ -195,7 +195,7 @@ a {
 
 /* estilo de galeria con grid */
 
-.title {
+/* .title {
   text-align: center;
   font-size: 2em;
   margin-top: 150px;
@@ -203,7 +203,7 @@ a {
   margin-right: 150px;
   margin-left: 80px;
   padding: 0.5rem;
-}
+} */
 
 .container-gallery {
   width: 100%;
@@ -236,7 +236,7 @@ a {
   grid-row-start: span 2;
 }
 
-.titulo_servicios {
+/* .titulo_servicios {
   margin-top: 150px;
   margin-bottom: 50px;
   margin-right: 150px;
@@ -252,7 +252,7 @@ a {
   margin-left: 80px;
   padding: 0.5rem;
   text-align: center;
-}
+} */
 
 /* formulario de contacto */
 
@@ -394,4 +394,32 @@ a {
 .footerNav {
   display: flex;
   align-content: flex-end;
+}
+/*medias queries lo pude aplicar en galeria que funciono no asi de bien en contacto*/
+@media screen and (max-width: 800px) {
+  .container-gallery {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 18px;
+    grid-template-rows: 200px;
+  }
+  .container-gallery .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-gallery {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-gallery .box-img .img {
+    height: auto;
+  }
+  .contactFormGeneral {
+    grid-template-columns: 1fr;
+  }
+  .contactanos {
+    padding: 1em 1em;
+  }
 }

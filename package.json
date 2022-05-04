@@ -1,0 +1,19 @@
+{
+  "name": "beatriz-moya-aplicando-grids---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatrizM2/nuevorepositorio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeatrizM2/nuevorepositorio/issues"
+  },
+  "homepage": "https://github.com/BeatrizM2/nuevorepositorio#readme"
+}
