@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="../img/Crown.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Servicios</title>
     <link
@@ -22,7 +28,54 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light background-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.svg" alt="LOGO"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntasfrecuentes.html"
+                  >Preguntas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="menu">
         <div class="container-logo-nav-container">
           <a class="logo" href="index.html">
             <img src="../img/logo.svg" alt="logo_empresa" />
@@ -47,30 +100,119 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
     </header>
     <main class="main">
       <h1 class="title_faq">Preguntas Frecuentes</h1>
-      <p>
-        SERVICIOS PARA EVENTOS CORPORATIVOS. Realizamos eventos corporativos que
-        comunican la identidad de la empresa de manera eficiente y creativa.
-        Sabemos lo significativo que es para la imagen de su empresa, que cada
-        detalle esté absolutamente pensado y que su evento tenga las mejores
-        repercusiones. Por eso diseñamos el evento planificación , organización
-        y coordinación integral y proponemos ideas creativas que sorprendan a
-        los invitados y conviertan al evento en un acontecimiento memorable.
-        Ofrecemos las mejores opciones de servicios a través de proveedores con
-        gran trayectoria y seriedad en cada rubro. A la vez, logramos que
-        nuestros clientes ahorren tiempo y dinero en la búsqueda de alternativas
-        y comparación de servicios.
-      </p>
-      <p>
-        Servicios para Eventos Sociales. Brindamos un servicio integral de
-        organización de eventos sociales. Contamos con un gran abanico de
-        propuestas, originalidad, estilo y seguimiento continuo con cada uno de
-        nuestros clientes. Asesoramiento y contratación de todos los servicios
-        para su evento.
-      </p>
+      <div class="container">
+        <div class="content">
+          <p>
+            SERVICIOS PARA EVENTOS CORPORATIVOS. Realizamos eventos corporativos
+            que comunican la identidad de la empresa de manera eficiente y
+            creativa. Sabemos lo significativo que es para la imagen de su
+            empresa, que cada detalle esté absolutamente pensado y que su evento
+            tenga las mejores repercusiones. Por eso diseñamos el evento
+            planificación , organización y coordinación integral y proponemos
+            ideas creativas que sorprendan a los invitados y conviertan al
+            evento en un acontecimiento memorable. Ofrecemos las mejores
+            opciones de servicios a través de proveedores con gran trayectoria y
+            seriedad en cada rubro. A la vez, logramos que nuestros clientes
+            ahorren tiempo y dinero en la búsqueda de alternativas y comparación
+            de servicios.
+          </p>
+          <p>
+            Servicios para Eventos Sociales. Brindamos un servicio integral de
+            organización de eventos sociales. Contamos con un gran abanico de
+            propuestas, originalidad, estilo y seguimiento continuo con cada uno
+            de nuestros clientes. Asesoramiento y contratación de todos los
+            servicios para su evento.
+          </p>
+        </div>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Lorem ipsum dolor sit amet consectetur?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body text-center">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item's accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Lorem ipsum dolor sit amet?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body text-center">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              second item's accordion body. Let's imagine this being filled with
+              some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body text-center">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footerStyle">
       <div class="footerCenter">
@@ -106,5 +248,16 @@
         </ul>
       </div>
     </footer>
+    <!--scrip de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
